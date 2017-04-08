@@ -64,7 +64,7 @@ for entry in log_data:
 		# here we are only checking for the first index value after splitting
 		# because it can either be a resource or an http family.
 		for match in regex.finditer(first[0]):
-			resources.append(match.group(1))
+			resources.append(first[0])
 			# Making an array of bandwidthData which will have bandwidth information, just for valid resources.
 			# Otherwise that bandwidth should not be counted.
 			bandwidthData.append(bandwidth(entry_data[2]))

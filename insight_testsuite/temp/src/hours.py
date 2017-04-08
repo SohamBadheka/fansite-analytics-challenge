@@ -52,7 +52,7 @@ for item in sorted_busyTimes:
     it = str(item).replace('\'','')
     p = re.search('\((.*?)\)', it)
     itemToReturn = p.group(1).replace(" ","")
+
     print>>f, itemToReturn
-    # print>>f, itemToReturn
 
 f.close()
